@@ -10,7 +10,7 @@ E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
   // Solution code here...
-  return arr.reduce((current, previous) => current + previous);
+  return arr.reduce((current, previous) => Math.max(current, previous));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -41,12 +41,10 @@ Write a function named checkValues that takes in an object and a value and retur
 const checkValues = (obj, value) => {
   // Solution code here...
   let values = Object.values(obj);
-  for(let v in values) {
-    if (v === value) {
-      return true;
-    } else {
-      return false;
-    }
+  if (values.includes(value)) {
+    return true;
+  } else {
+    return false;
   }
 };
 
@@ -144,7 +142,14 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-
+  let values = Object.values(arr);
+  values.forEach(value =>{
+    if(arr[character] === value) {
+      return true;
+    } else {
+      return false;
+    }
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
