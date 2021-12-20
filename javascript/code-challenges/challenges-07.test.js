@@ -28,15 +28,7 @@ let starWarsPeople = [
 
 const sortStarWarsCharacters = (starWarsArr) => {
   // Solution code here...
-//   let sortedArray = starWarsArr.sort(function(a, b) {
-//     a = a.height;
-//     b = b.height;
-//     return b - a;
-//   });
-//   console.log(sortedArray);
-//   let names = sortedArray.map(object => object.name);
-//   console.log(names);
-//   return names;
+  return starWarsArr.sort((a,b) => parseInt(b.height) - parseInt(a.height));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -78,20 +70,12 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...
-  // let splitString = str.split();
-  // let charArray = Array.from(str);
-  // console.log('character array', charArray);
-  // charArray.forEach(string =>{
-  //   result.push(string);
-  //   let sliced = string.split('');
-  //   console.log(sliced);
-  // });
-//   for(let i=0; i<charArray.length; i++) {
-//     let spliced = charArray.splice(i, 1);
-//     console.log(charArray);
-//     charArray.join();
-//   }
-//   return result;
+  while (str){
+    result.push(str);
+    str = str.split('').splice(1).join('');
+  }
+  result.push(str);
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -152,8 +136,11 @@ const gruffaloCrumble = {
 
 
 const listFoods = (recipe) => {
-  let result = [];
-  // Solution code here...
+  let result = recipe.ingredients.map(item => {
+    let firstSliceIndex = item.indexOf(' ') + 1;
+    let secondSliceIndex = item.slice(firstSliceIndex).indexOf(' ') + 1;
+    return item.slice(firstSliceIndex + secondSliceIndex);
+  });
   return result;
 };
 

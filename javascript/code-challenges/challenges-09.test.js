@@ -10,7 +10,12 @@ E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
   // Solution code here...
-  return arr.reduce((current, previous) => current + previous);
+  return arr.reduce((a,b) => {
+    if (b > a){
+      a = b;
+    }
+    return a;
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -40,14 +45,8 @@ Write a function named checkValues that takes in an object and a value and retur
 
 const checkValues = (obj, value) => {
   // Solution code here...
-  let values = Object.values(obj);
-  for(let v in values) {
-    if (v === value) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+  let arr = Object.values(obj);
+  return arr.includes(value);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -71,6 +70,11 @@ HR has asked you to change the data to make it easier to print so that it looks 
 
 const updateNumbers = (obj) => {
   // Solution code here...
+  let newArr = [];
+  Object.entries(obj).forEach(entry => {
+    newArr.push(entry.concat().toString().replace(`,`, `: `));
+  });
+  return newArr;
 };
 
 
@@ -127,6 +131,7 @@ const characters = [
 const getHouses = (arr) => {
   let houses = [];
   // Solution code here...
+  arr.forEach(char => houses.push(char.house));
   return houses;
 };
 
@@ -144,7 +149,14 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-
+  let characterData = arr.filter(char => {
+    if (char.name === character){
+      return char;
+    }
+  });
+  let arrToCheck = Object.values(characterData[0]);
+  console.log(typeof arrToCheck[2]);
+  return (typeof arrToCheck[2] === 'object');
 };
 
 /* ------------------------------------------------------------------------------------------------

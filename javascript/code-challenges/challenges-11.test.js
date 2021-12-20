@@ -20,14 +20,9 @@ Becomes:
 
 function transformToLis(obj){
   // Solution code here...
-  Object.entries(obj).forEach(entry => {
-    console.log(entry);
-    console.log(entry[0]);
-    let key = entry[0];
-    let value = entry[1];
-    const li = document.createElement('li');
-    li.textContent = `${key}: ${value}`;
-    return li;
+  let keys = Object.keys(obj);
+  return keys.map(key => {
+    return `<li>${key}: ${obj[key]}</li>`;
   });
 }
 
@@ -66,21 +61,11 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 
 const totalSum = (input) => {
   // Solution code here...
-  console.log(input);
-  let totalReduced = input.reduce((a, b) => {
-    console.log('a', a);
-    console.log('b', b);
-    let aReduced = a.reduce((acc, current) => {
-      return acc+current;
-    });
-    console.log('aReduced', aReduced);
-    let bReduced = b.reduce((acc, current) => {
-      return acc+current;
-    });
-    console.log('bReduced', bReduced);
-    a = aReduced + bReduced;
+  let sum = 0;
+  input.map( arr => {
+    arr.map(value => sum += value);
   });
-  return totalReduced;
+  return sum;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -97,7 +82,13 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
-  
+  let divisibleByFiveArray = input.map(innerArray => {
+    return innerArray.filter(elem => (typeof (elem) === 'number' && elem % 5 === 0));
+  });
+  let twoToThePowerArray = divisibleByFiveArray.map(innerArray => {
+    return innerArray.map(num => 2 ** num);
+  });
+  return twoToThePowerArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -164,6 +155,11 @@ let starWarsData = [{
 
 let findMaleAndFemale = (data) => {
   // Solution code here...
+  return data.map( character => {
+    if (character.gender === 'female' || character.gender === 'male'){
+      return character.name;
+    }
+  }).filter(idx => idx !== undefined).join(' and ');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -174,6 +170,14 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 
 let findShortest = (data) => {
   // Solution code here...
+  let shortest = '';
+  let sortedHeights = data.map(char => char.height).sort((a,b) => a -b);
+  data.forEach(char => {
+    if (char.height === sortedHeights[0]){
+      shortest = char.name;
+    }
+  });
+  return shortest;
 };
 
 /* ------------------------------------------------------------------------------------------------

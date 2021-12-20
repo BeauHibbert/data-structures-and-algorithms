@@ -58,10 +58,14 @@ Write a function named countNumberOfElements that, given an array as input, uses
 Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
-// const countNumberOfElements = (arr) => {
+const countNumberOfElements = (arr) => {
   // Solution code here...
-  // const reduceCallback = (accumulator, currentElement) => accumulator + 
-// };
+  let arrLength = arr.reduce(function (acc){
+    acc = acc + 1;
+    return acc;
+  }, 0);
+  return arrLength;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -121,11 +125,9 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
   // Solution code here...
-  const reduceCallback = (acc, characterObject) => {
-    console.log(acc);
-    acc + characterObject.name;
-  };
-  return arr.reduce(reduceCallback, {});
+  let listOfNames = [];
+  arr.reduce((acc, value) => (listOfNames.push(value.name)), []);
+  return listOfNames;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -138,6 +140,11 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
+  let arr = str.split('');
+  let backwards = arr.reduce((acc, val) => {
+    return val + acc;
+  }, '');
+  return backwards;
 };
 
 /* ------------------------------------------------------------------------------------------------
