@@ -56,6 +56,7 @@ let characters = [
 
 const sortByChildren = (charArray) => {
   // Solution code here...
+  return charArray.sort((a, b) => a.children.length - b.children.length);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -98,6 +99,7 @@ Write a function named containsWorld that takes in a string or number of any len
 
 const containsWorld = (input) => {
   // Solution code here...
+  return /world/.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -123,6 +125,12 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
+  const citiesAtoJ = arr.filter(city => {
+    const regex = /^[A-J]\w*/g;
+    return regex.test(city);
+  });
+  console.log(citiesAtoJ);
+  return citiesAtoJ;
 };
 
 /* ------------------------------------------------------------------------------------------------

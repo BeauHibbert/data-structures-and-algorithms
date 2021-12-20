@@ -107,22 +107,9 @@ Here is an example of the input:
 
 const sortByPrice = (arr) => {
   // Solution code here...
-  function compare(a, b) {
-    // Use toUpperCase() to ignore character casing
-    const priceA = a.price;
-    const priceB = b.price;
-    console.log('priceA', priceA);
-    console.log('priceB', priceB);
-    let comparison = 0;
-    if (priceA > priceB) {
-      comparison = 1;
-    } else if (priceA < priceB) {
-      comparison = -1;
-    }
-    return comparison;
-  }
-  
-  arr.sort(compare);
+  return arr.sort((a,b)=> {
+    return (a.price - b.price);
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
