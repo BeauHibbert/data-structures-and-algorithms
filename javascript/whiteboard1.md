@@ -3,7 +3,7 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 ## Whiteboard Process
 
-![White Board Diagram]("https://user-images.githubusercontent.com/91757275/159397205-5fccfcd8-44da-4c4b-9db1-28bf9ccfba7c.png")
+![White Board Diagram]('./whiteboard.png')
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
