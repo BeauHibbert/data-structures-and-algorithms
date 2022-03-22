@@ -1,8 +1,10 @@
 # Reverse an Array
-<!-- Description of the challenge -->
+Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+
+<img width="1728" alt="Screen Shot 2022-03-21 at 7 15 45 PM" src="https://user-images.githubusercontent.com/91757275/159397205-5fccfcd8-44da-4c4b-9db1-28bf9ccfba7c.png">
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
+Since this was done in class, I'll 
