@@ -3,8 +3,8 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 ## Whiteboard Process
 
-<img width="1728" alt="Screen Shot 2022-03-21 at 7 15 45 PM" src="https://user-images.githubusercontent.com/91757275/159397205-5fccfcd8-44da-4c4b-9db1-28bf9ccfba7c.png">
+![White Board Diagram]("https://user-images.githubusercontent.com/91757275/159397205-5fccfcd8-44da-4c4b-9db1-28bf9ccfba7c.png")
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
-Since this was done in class, I'll 
+The way that this reverse array algorithm is written results in a time complexity of O(n) but the space complexity is better(O(1)) because the reversal is being done in place as opposed to relying on a seperate temporary array.
