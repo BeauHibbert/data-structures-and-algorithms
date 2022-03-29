@@ -43,7 +43,48 @@ class LinkedList {
     }
     return stringified;
   }
+
+  append(data) {
+    let tail = this.head;
+    if (!tail) {
+      this.head = new Node(data);
+    } else { 
+      while (tail.next !== null) {
+        tail = tail.next;
+      }
+      tail.next = new Node(data);
+    }
+  }
+
+  insertBefore(value, newValue) {
+    let current = this.head;
+    let after = current.next;
+    while (after !== value) {
+      if (after === null) throw 'Value not found';
+      current = after;
+    }
+    current.next = new Node(newValue, after);
+  }
+
+  insertAfter(value, newValue) {
+    let node = new Node(newValue);
+    let current = this.head;
+    let temp;
+
+    while (current) {
+      if (current.value === value) {
+        temp = current.next;
+        current.next = node;
+        node.next = temp;
+        return;
+      } else {
+        current = current.next;
+      }
+    }
+  }
 }
+
+
 
 
 
