@@ -69,15 +69,6 @@ Write tests to prove the following functionality:
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 The big O space/time for these are O(1) because n is always linear and it is always either adding or subtracting nodes.
-push
-pop
-peek
-isEmpty
-
-enqueue
-dequeue
-peek
-isEmpty
 
 ## API
 - Push - Nodes or items that are put into the stack are pushed
