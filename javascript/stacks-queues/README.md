@@ -95,7 +95,7 @@ notes from: https://codefellows.github.io/common_curriculum/data_structures_and_
 Implement a Queue using two Stacks.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+<img width="1728" alt="Screen Shot 2022-04-04 at 10 25 24 PM" src="https://user-images.githubusercontent.com/91757275/161684978-fa10b598-1239-4bfa-a61b-c212e276643b.png">
 
 ## Approach & Efficiency
 Enqueue
