@@ -73,7 +73,39 @@ class Queue {
   }
 }
 
+class PseudoQueue {
+  constructor() {
+    this.back = new Stack;
+    this.front = new Stack;
+  }
+  enqueue(val) {
+    if (this.front.top === null) {
+      this.back.push(val);
+    } else {
+      while (this.front.top) {
+        let transfer = this.front.pop();
+        this.back.push(transfer);
+      }
+      this.back.push(val);
+    }
+  }
+
+  dequeue() {
+
+    if (this.back.top === null) {
+      return this.front.pop();
+    } else {
+      while (this.back.top) {
+        let transfer = this.back.pop();
+        this.front.push(transfer);
+      }
+      return this.front.pop();
+    }
+  }
+}
+
 module.exports = {
   Stack,
   Queue,
+  PseudoQueue,
 };
