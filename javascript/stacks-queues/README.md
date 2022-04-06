@@ -107,13 +107,12 @@ The big O space/time complexity if the front stack is loaded is O(n) because it 
 ------------------------------------------------------------------------------------------------
 
 # Challenge Summary
-<!-- Description of the challenge -->
+First-in, First out Animal Shelter.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+<img width="1728" alt="Screen Shot 2022-04-05 at 7 43 50 PM" src="https://user-images.githubusercontent.com/91757275/161888456-1b7fcd20-1691-4da0-a71a-69b060b79d9d.png">
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
-## Solution
-<!-- Show how to run your code, and examples of it in action -->
+The enqueue will always be O(1) because it is always just performing one action regardless of n.
+The dequeue will be O(n) because if the preference is not in the front of the queue then it has to cycle through n times.
