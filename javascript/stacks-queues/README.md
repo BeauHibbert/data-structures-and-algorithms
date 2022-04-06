@@ -104,3 +104,16 @@ Dequeue
 The big O space/time complexity if the front stack is loaded is O(n) because it will need to pop/push the nodes to the front of the stack. It will have to scale with n because it has to cycle through each value. If the back stack is loaded it will be O(1) because it will add to the stack regardless of how many times it needs to be performed.
 
 
+------------------------------------------------------------------------------------------------
+
+# Challenge Summary
+<!-- Description of the challenge -->
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
