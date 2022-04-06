@@ -105,6 +105,7 @@ The big O space/time complexity if the front stack is loaded is O(n) because it 
 
 
 ------------------------------------------------------------------------------------------------
+# Stack Queue Animal Shelter
 
 # Challenge Summary
 First-in, First out Animal Shelter.
