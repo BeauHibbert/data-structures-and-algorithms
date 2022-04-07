@@ -123,10 +123,10 @@ The dequeue will be O(n) because if the preference is not in the front of the qu
 
 # stack-queue-brackets
 
-## Write a function called validate brackets
-## Arguments: string
-## Return: boolean
-## Representing whether or not the brackets in the string are balanced
+#### Write a function called validate brackets
+#### Arguments: string
+#### Return: boolean
+#### Representing whether or not the brackets in the string are balanced
 
 <img width="1728" alt="Screen Shot 2022-04-06 at 8 48 01 PM" src="https://user-images.githubusercontent.com/91757275/162118474-cd578d23-012e-46b1-bd62-e5b508c5b177.png">
 
