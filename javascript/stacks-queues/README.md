@@ -117,3 +117,11 @@ First-in, First out Animal Shelter.
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 The enqueue will always be O(1) because it is always just performing one action regardless of n.
 The dequeue will be O(n) because if the preference is not in the front of the queue then it has to cycle through n times.
+
+
+------------------------------------------------------------------------------------------------
+
+# stack-queue-brackets
+
+
+
