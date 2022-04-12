@@ -6,11 +6,11 @@ let tree = new BST;
 tree.add(1);
 tree.add(4);
 tree.add(34);
-tree.add(4);
+tree.add(8);
 tree.add(90);
 tree.add(88);
 tree.add(2);
-tree.add(34);
+tree.add(14);
 tree.add(27);
 
 
