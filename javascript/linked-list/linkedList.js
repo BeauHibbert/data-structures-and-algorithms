@@ -48,7 +48,7 @@ class LinkedList {
     let tail = this.head;
     if (!tail) {
       this.head = new Node(data);
-    } else { 
+    } else {
       while (tail.next !== null) {
         tail = tail.next;
       }
