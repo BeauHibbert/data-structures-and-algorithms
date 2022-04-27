@@ -27,4 +27,3 @@ The next part of the pseudo code creates a helper function called merge()
 - `set remaining entries in arr to remaining values in right` This line is saying to loop through the remaining indexes in the array and the right array and set it equal to the remaining values in the right array.
 - `else set remaining entries in arr to remaining values in left` This line is saying to loop through the remaining indexes in the array and the left array and set it equal to the remaining values in the left array.
 
-<img width="1728" alt="code challenge 27" src="https://user-images.githubusercontent.com/91757275/165439526-4f1c1969-9025-453e-8981-2b8c9f917d26.png">
