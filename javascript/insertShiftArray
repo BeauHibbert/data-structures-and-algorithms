@@ -3,7 +3,7 @@ Write a function called insertShiftArray which takes in an array and a value to 
 language, return an array with the new value added at the middle index.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+<img width="1720" alt="Screen Shot 2022-06-14 at 6 28 15 PM" src="https://user-images.githubusercontent.com/91757275/173717608-58ecb575-d0f7-4b44-ae1a-9d83a3b58b37.png">
 
 ## Approach & Efficiency
 In my algorithm, I split the array in half with math.ceil to account for an odd case of elements, and then inserted the first half of the array into a 
