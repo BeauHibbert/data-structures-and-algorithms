@@ -1,0 +1,10 @@
+# Insert to Middle of an Array
+Write a function called insertShiftArray which takes in an array and a value to be added. Without utilizing any of the built-in methods available to your
+language, return an array with the new value added at the middle index.
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+
+## Approach & Efficiency
+In my algorithm, I split the array in half with math.ceil to account for an odd case of elements, and then inserted the first half of the array into a 
+new array and the second half of the array into the new array at their index + 1. the new element could then be put in the middle.
