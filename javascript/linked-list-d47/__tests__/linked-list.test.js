@@ -2,6 +2,7 @@
 
 const { LinkedList } = require('../linked-list');
 
+// tests for code challenge 5
 
 describe('Testing Linked List and all methods', () => {
   it('Create a new linked list', () => {
@@ -110,4 +111,49 @@ it('Can successfully insert a node after the last node of the linked list', () =
 
 
   expect(list.toString()).toEqual('{ a } -> { b } -> { z } -> NULL');
+});
+
+
+// tests for code challenge 7
+
+it('Where k is greater than the length of the linked list', () => {
+  let list = new LinkedList;
+  list.append('a');
+  list.append('b');
+
+  expect(list.kFromEnd(3)).toEqual('Exception');
+});
+
+it('Where k and the length of the list are the same', () => {
+  let list = new LinkedList;
+  list.append('a');
+  list.append('b');
+
+  expect(list.kFromEnd(2)).toEqual('Exception');
+});
+
+it('Where k is not a positive integer', () => {
+  let list = new LinkedList;
+  list.append('a');
+  list.append('b');
+
+  expect(list.kFromEnd(-1)).toEqual('Exception');
+});
+
+it('Where k is not a positive integer', () => {
+  let list = new LinkedList;
+  list.append('a');
+
+  expect(list.kFromEnd(0)).toEqual('a');
+});
+
+it('Where k is not a positive integer', () => {
+  let list = new LinkedList;
+  list.append('a');
+  list.append('b');
+  list.append('c');
+  list.append('d');
+  list.append('e');
+
+  expect(list.kFromEnd(2)).toEqual('c');
 });

@@ -82,6 +82,25 @@ class LinkedList {
       }
     }
   }
+
+  kFromEnd (k) {
+    if (k < 1) {
+      return null;
+    }
+    let current = this.head;
+    let nBehindCurrent = this.head;
+    for (let i = 0; i < k - 1; i++) {
+      current = current.next;
+      if (!current) {
+        return null;
+      }
+    }
+    while (typeof current.next !== 'undefined') {
+      nBehindCurrent = nBehindCurrent.next;
+      current = current.next;
+    }
+    return nBehindCurrent;
+  }
 }
 
 
