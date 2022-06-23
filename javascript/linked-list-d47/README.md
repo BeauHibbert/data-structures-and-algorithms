@@ -54,3 +54,24 @@ Write the following method for the Linked List class:
 ## Efficiency/Big O
 
 The space and time efficiency would be O(n) because at worse it would have to iterate through the linked list once and grab the index value of the solution. It would have to scale with n.
+
+
+
+# Linked List Zip
+
+Zip two linked lists.
+
+Feature Tasks
+
+- Write a function called zip lists
+- Arguments: 2 linked lists
+- Return: New Linked List, zipped as noted below
+- Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the the zipped list.
+- Try and keep additional space down to O(1)
+- You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+## Efficiency/Big O
+
+The space/time efficiency would be O(n^2) because the worst case is that it has to iterate through both lists and n would scale directly.
+
+<img width="1728" alt="linked list zip" src="https://user-images.githubusercontent.com/91757275/163728890-c4d9949a-1085-4170-b6c6-5e9cf6e529f3.png">
