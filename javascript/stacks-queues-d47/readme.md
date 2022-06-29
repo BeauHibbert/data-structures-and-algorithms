@@ -102,3 +102,19 @@ Enqueue
 The big O space/time complexity if the front stack is loaded is O(n) because it needs to cycle through the stack as many times as there are nodes in the stack. If the back stack is loaded, it is O(1) because it will add to the stack regardless of how many times it needs to be performed.
 Dequeue
 The big O space/time complexity if the front stack is loaded is O(n) because it will need to pop/push the nodes to the front of the stack. It will have to scale with n because it has to cycle through each value. If the back stack is loaded it will be O(1) because it will add to the stack regardless of how many times it needs to be performed.
+
+
+
+
+# Stack Queue Animal Shelter
+
+# Challenge Summary
+First-in, First out Animal Shelter.
+
+## Whiteboard Process
+<img width="1728" alt="Screen Shot 2022-04-05 at 7 43 50 PM" src="https://user-images.githubusercontent.com/91757275/161888456-1b7fcd20-1691-4da0-a71a-69b060b79d9d.png">
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+The enqueue will always be O(1) because it is always just performing one action regardless of n.
+The dequeue will be O(n) because if the preference is not in the front of the queue then it has to cycle through n times.
