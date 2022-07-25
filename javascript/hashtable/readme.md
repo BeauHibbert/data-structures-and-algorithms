@@ -26,5 +26,7 @@ hash
 Arguments: key
 Returns: Index in the collection for that key
 
+<img width="1502" alt="Screen Shot 2022-07-24 at 8 52 18 PM" src="https://user-images.githubusercontent.com/91757275/180697165-a9c39a6b-4ebc-442c-a145-5a4c8a814727.png">
+
 ## Resources
 https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-30/resources/Hashtables.html
