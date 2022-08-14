@@ -1,3 +1,39 @@
+
+## Blog Post 
+
+We are going to sort an array using quick sort.
+
+Choose a pivot point, here we have selected 23 as the pivot. We are going swap it with the value at the end of the array.
+
+<img width="565" alt="Screen Shot 2022-08-13 at 5 48 01 PM" src="https://user-images.githubusercontent.com/91757275/184518011-a86db21c-1812-4526-b9be-8631f9439804.png">
+
+Now we are going to look for two things.
+
+- Item from the left that is larger than the pivot
+- Item from the right that is smaller than the pivot
+
+We now are going to swap those values.
+
+<img width="615" alt="Screen Shot 2022-08-13 at 5 48 15 PM" src="https://user-images.githubusercontent.com/91757275/184518015-1180d30d-eeb2-4f92-bf76-22e2d40c235d.png">
+
+We are going to repeat this process until the value of the item from the left is greater than the value of the item from the right
+
+<img width="628" alt="Screen Shot 2022-08-13 at 5 48 32 PM" src="https://user-images.githubusercontent.com/91757275/184518257-286b4faa-8dfa-4429-9ed5-b18c9fa9cb37.png">
+
+We now swap the item from the left with the pivot and now the pivot is in the correct index.
+
+<img width="630" alt="Screen Shot 2022-08-13 at 5 48 46 PM" src="https://user-images.githubusercontent.com/91757275/184518269-2dd6dfb6-5dc1-46fe-a0ad-25cdcb7f5743.png">
+
+We now pick a new pivot within the unsorted partition of the array and repeat the process.
+
+<img width="635" alt="Screen Shot 2022-08-13 at 5 49 18 PM" src="https://user-images.githubusercontent.com/91757275/184518467-c29b6787-6598-4646-a254-46d63fb979fa.png">
+
+We now have an assorted array using quicksort.
+
+
+
+
+
 ## Quick Sort Pseudo Code
 
 
@@ -29,3 +65,5 @@ We can understand the pseudo code by reading it line by line like this.
 - `temp <-- arr[i]` This line will set the variable temp equal to the value in the array at index i.
 - `arr[i] <-- arr[low]` This line sets the value in the array at index i to the value in the array at index low.
 - `arr[low] <-- temp` And finally, this line will set the value in the array at index low to the temp value.
+
+
