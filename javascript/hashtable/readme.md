@@ -45,3 +45,14 @@ https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/C
 
 The approach that I used was using a hash map to store values from the first tree and then while traversing the second tree pushing any value into an array that matches from the first tree.
 The big O of time would be O(n) because it will have to scale with n as it loops through. The big O of space will be O(2n) because we are using both a hashmap and output array.
+
+
+# hashmap-left-join
+Implement a simplified LEFT JOIN for 2 Hashmaps.
+
+## Whiteboard Process
+<img width="1551" alt="Screen Shot 2022-08-14 at 3 47 58 PM" src="https://user-images.githubusercontent.com/91757275/184557678-df500881-5f85-4d13-8afb-367e9b5f28fd.png">
+
+## Approach & Efficiency
+The approach that I took for this was to loop through the first hashmap and put the key and value into the array. Then loop through the second array and if the key is also in the second hashmap, then push the value into the array. The big O of space for this would be O(n) because it will scale with the size of the hashmaps. The big O of time for this would be O(n) because it will have to scale with the size of the hashmap as well.
+
