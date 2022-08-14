@@ -30,3 +30,18 @@ Returns: Index in the collection for that key
 
 ## Resources
 https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-30/resources/Hashtables.html
+
+## Tree intersection
+
+### Challenge Summary
+- Find common values in 2 binary trees.
+- Write a function called tree_intersection that takes two binary trees as parameters.
+- Using your Hashmap implementation as a part of your algorithm, return a set of values found in both trees.
+
+### Whiteboard Process
+<img width="1541" alt="Screen Shot 2022-08-13 at 8 55 59 PM" src="https://user-images.githubusercontent.com/91757275/184521767-8bdf97d8-281c-40d1-ba06-0b59a0b12f87.png">
+
+### Approach & Efficiency
+
+The approach that I used was using a hash map to store values from the first tree and then while traversing the second tree pushing any value into an array that matches from the first tree.
+The big O of time would be O(n) because it will have to scale with n as it loops through. The big O of space will be O(2n) because we are using both a hashmap and output array.
